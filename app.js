@@ -15,6 +15,12 @@ app.get("/:lampu/:lampu2",function(req,res){
     res.redirect("/") //untuk mengembalikan / pada url
 })
 
+app.get("/:mikro/:lampu2",function(req,res){
+    statusLampu = req.params.lampu, //mengambil variabel dari url
+    statuslampu2 = req.params.lampu2
+    res.redirect("/") //untuk mengembalikan / pada url
+})
+
 app.get("/",function(req,res){
     res.send({
         lampu:statusLampu,
