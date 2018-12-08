@@ -20,4 +20,4 @@ app.get("/",function(req,res){
         lampu:statusLampu,
         lampu2:statusLampu2
     })
-})
+});
